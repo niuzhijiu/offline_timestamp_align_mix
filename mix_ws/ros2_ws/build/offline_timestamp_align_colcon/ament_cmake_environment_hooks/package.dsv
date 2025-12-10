@@ -1,0 +1,4 @@
+source;share/offline_timestamp_align_colcon/local_setup.bash
+source;share/offline_timestamp_align_colcon/local_setup.dsv
+source;share/offline_timestamp_align_colcon/local_setup.sh
+source;share/offline_timestamp_align_colcon/local_setup.zsh
