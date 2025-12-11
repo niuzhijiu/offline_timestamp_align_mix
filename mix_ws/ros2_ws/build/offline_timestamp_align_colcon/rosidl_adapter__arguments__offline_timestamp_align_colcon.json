@@ -1,6 +1,0 @@
-{
-  "package_name": "offline_timestamp_align_colcon",
-  "non_idl_tuples": [
-    "/home/slam/mix_ws/ros2_ws/src/offline_timestamp_align_colcon:msg/FusedState.msg"
-  ]
-}

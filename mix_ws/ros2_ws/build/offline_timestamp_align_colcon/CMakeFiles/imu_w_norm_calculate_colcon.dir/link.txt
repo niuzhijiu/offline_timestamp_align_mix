@@ -1,1 +1,0 @@
-/usr/bin/c++     CMakeFiles/imu_w_norm_calculate_colcon.dir/src/imu_w_norm_calculate_colcon.cpp.o  -o imu_w_norm_calculate_colcon 

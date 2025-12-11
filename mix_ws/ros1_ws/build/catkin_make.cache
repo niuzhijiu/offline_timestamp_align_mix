@@ -1,2 +1,0 @@
-offline_timestamp_align
--DCATKIN_DEVEL_PREFIX=/home/slam/mix_ws/ros1_ws/devel -DCMAKE_INSTALL_PREFIX=/home/slam/mix_ws/ros1_ws/install -G Unix Makefiles
