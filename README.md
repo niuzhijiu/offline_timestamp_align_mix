@@ -82,3 +82,42 @@ offline_timestamp_align_colcon.launch.py：一键启动ROS2系统内的发布和
 pub1_fus2.launch.py：跨版本一键启动ROS1系统内的发布节点和ROS2系统内的融合节点  
 pub2_fus1.launch.py：跨版本一键启动ROS2系统内的发布节点和ROS1系统内的融合节点  
 split.launch.py：跨版本一键启动ROS1系统内对ROS1格式bag文件进行拆解的功能  
+
+## 简单的ros1_bridge测试过程
+1.打开1#终端，加载ROS1环境变量，然后执行命令：
+```bash
+roscore
+```
+2.打开2#终端，先加载ROS1环境变量，再加载ROS2环境变量，之后执行命令启动ros1_bridge：
+```bash
+ros2 run ros1_bridge dynamic_bridge  
+```
+3.测试ROS1系统发布，ROS2系统订阅的跨版本通信过程：  
+打开3#终端，加载ROS1环境变量，之后执行命令：
+```bash
+rosrun roscpp_tutorials talker  
+```
+打开4#终端，加载ROS2环境变量，之后执行命令：
+```bash
+ros2 run demo_nodes_cpp listener
+```
+测试成功示意图：
+![file dependency](1pub_2sub.png)
+
+4.测试ROS2系统发布，ROS1系统订阅的跨版本通信过程：  
+打开5#终端，加载ROS2环境变量，之后执行命令：
+```bash
+ros2 run demo_nodes_cpp talker
+```
+打开6#终端，加载ROS1环境变量，之后执行命令：
+```bash
+rosrun roscpp_tutorials listener
+```
+![file dependency](2pub_1sub.png)
+
+注：
+加载系统级别环境变量的命令：
+```bash
+source /opt/ros/foxy/setup.bash
+source /opt/ros/noetic/setup.bash
+```
