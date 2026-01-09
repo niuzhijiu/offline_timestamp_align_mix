@@ -10,8 +10,6 @@ offline_timestamp_align_mix_ws
    │   └── src
    │       └── offline_timestamp_align
    │           ├── CMakeLists.txt
-   │           ├── include
-   │           │   └── offline_timestamp_align
    │           ├── launch
    │           │   └── offline_timestamp_align.launch
    │           ├── msg
@@ -30,11 +28,9 @@ offline_timestamp_align_mix_ws
        └── src
            └── offline_timestamp_align_colcon
                ├── CMakeLists.txt
-               ├── include
-               │   └── offline_timestamp_align_colcon
                ├── launch
                │   ├── both_1.launch.py
-               │   ├── offline_timestamp_align_colcon.launch.py
+               │   ├── both_2.launch.py
                │   ├── pub1_fus2.launch.py
                │   ├── pub2_fus1.launch.py
                │   └── split.launch.py
@@ -78,7 +74,7 @@ timestamp_correct_colcon.cpp：时间戳修正
 publish_node_colcon.cpp：ROS2发布节点  
 fusion_node_colcon.cpp：ROS2信息融合节点  
 both_1.launch.py：跨版本一键启动ROS1系统内的发布和融合节点  
-offline_timestamp_align_colcon.launch.py：一键启动ROS2系统内的发布和融合节点  
+both_2.launch.py：一键启动ROS2系统内的发布和融合节点  
 pub1_fus2.launch.py：跨版本一键启动ROS1系统内的发布节点和ROS2系统内的融合节点  
 pub2_fus1.launch.py：跨版本一键启动ROS2系统内的发布节点和ROS1系统内的融合节点  
 split.launch.py：跨版本一键启动ROS1系统内对ROS1格式bag文件进行拆解的功能  

@@ -7,8 +7,8 @@ def generate_launch_description():
     split_cmd = [
         'bash',
         '-c',
-        'source /opt/ros/noetic/setup.bash && source /home/slam/mix_ws/ros1_ws/devel/setup.bash && \
-         /home/slam/mix_ws/ros1_ws/devel/lib/offline_timestamp_align/split' 
+        'source /opt/ros/noetic/setup.bash && source /home/cat/education_mix_ws/ros1_ws/devel/setup.bash && \
+         /home/cat/education_mix_ws/ros1_ws/devel/lib/offline_timestamp_align/split' 
     ]
 
     # 执行split命令
