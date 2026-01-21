@@ -84,7 +84,15 @@ split.launch.py：跨版本一键启动ROS1系统内对ROS1格式bag文件进行
 ```bash
 roscore
 ```
-2.打开2#终端，先加载ROS1环境变量，再加载ROS2环境变量，之后执行命令启动ros1_bridge：
+2.打开2#终端，先加载ROS1环境变量，再加载ROS2环境变量，之后打开ros1_bridge所在的文件夹，执行命令：
+```bash
+cd ros1_bridge_ws
+```
+加载文件夹变量，执行命令：
+```bash
+source install/setup.bash
+```
+启动ros1_bridge，执行命令：
 ```bash
 ros2 run ros1_bridge dynamic_bridge  
 ```
@@ -109,6 +117,7 @@ ros2 run demo_nodes_cpp talker
 ```bash
 rosrun roscpp_tutorials listener
 ```
+测试成功示意图：
 ![file dependency](2pub_1sub.png)
 
 注：
